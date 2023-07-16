@@ -1,0 +1,73 @@
+/** @format */
+
+.fa-solid {
+  font-size: 40px;
+  text-align: justify;
+  color: rgb(255, 153, 0);
+  padding: 30px;
+  padding-left: 35px;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.main-city-weather-icon {
+  font-size: 80px;
+  text-align: right;
+  color: rgb(255, 153, 0);
+  padding-bottom: 40px;
+  padding-right: 85px;
+  position: relative;
+  bottom: 35px;
+}
+
+.card-deck {
+  padding-top: 20px;
+}
+
+.main-city {
+  padding-top: 20px;
+  padding-left: 30px;
+}
+
+.units {
+  font-size: 34px;
+  position: relative;
+  top: -34px;
+  font-weight: lighter;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+h3 {
+  font-weight: lighter;
+}
+
+.week {
+  padding-top: 20px;
+}
+
+.main-temperature {
+  position: fixed;
+  left: 900px;
+  top: 170px;
+  font-size: 95px;
+  font-weight: bold;
+}
+
+.units {
+  position: fixed;
+  left: 1105px;
+  top: 280px;
+}

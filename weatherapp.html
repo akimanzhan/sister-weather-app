@@ -1,0 +1,137 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/41bb592006.js"
+      crossorigin="anonymous"
+    >
+  </script>
+
+   <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+
+  
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+
+
+  <body>
+    <div class="container">
+
+     <form id="search-form">
+        <div class="row">
+          <div class="col-9">
+          <input type="search" class="form-control" placeholder="Enter City" id="city-input">
+          </div>
+        <div class="d-grid gap-2 d-md-block"> 
+        <button class="btn btn-outline-primary" type="button" id="Search-city-button">Search City</button>
+        <button class="btn btn-outline-success" type="button"id="Search-current-button">Current</button>
+        </div>
+    </div>
+</form>
+
+
+      <div class="row">
+        <div class="col-2">
+          Similar...
+          <ul class="nav flex-column nav-tabs ">
+            <li class="nav-item border border-primary rounded-right">
+              <a class="nav-link" href="#">Daegu</a>
+            </li>
+            <li class="nav-item border border-primary rounded-right">
+              <a class="nav-link" href="#">Busan</a>
+            </li>
+            <li class="nav-item border border-primary rounded-right">
+              <a class="nav-link" href="#">Incheon</a>
+            </li>
+            <li class="nav-item border border-primary rounded-right">
+              <a class="nav-link" href="#">Ulsan</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-10 main-city">
+          <h1 id="city">Seoul</h1>
+          <h2 id="country">South Korea</h2>
+          
+         
+            <h2><span class="main-temperature" id="temperature">4</span></h2>
+            <span class="units"> <a href="#" id="#celsius-link">°C</a> | <a href="#" id="#fahrenheit-link" >°F </a></span>
+         
+
+         
+
+          <div class="main-city-weather-icon" id="icon">
+            <i class="fa-regular fa-sun"></i>
+          </div>
+          
+          <h4>
+             <ul>
+                <li> <strong><span id="weather-description">Sunny</span></strong></li>
+                <li>Humidity: <span id="humidity">0</span>%</li>
+                <li>Wind: <span id="wind">0</span> km/h</li>
+              </ul>
+          </h4>
+          
+          <div class="card-deck">
+            <div class="card border-top-0">
+              <div class="card-body ">
+                <h5 class="card-title">Sun 19th</h5>
+                <i class="fa-solid fa-sun"></i>
+                <p class="card-text">14°C</p>
+              </div>
+            </div>
+            <div class="card border-top-0">
+              <div class="card-body">
+                <h5 class="card-title">Mon 20th</h5>
+                <i class="fa-solid fa-sun"></i>
+                <p class="card-text">15°C</p>
+              </div>
+            </div>
+            <div class="card border-top-0">
+              <div class="card-body">
+                <h5 class="card-title">Tue 21st</h5>
+                <i class="fa-solid fa-cloud-sun"></i>
+                <p class="card-text">16°C</p>
+              </div>
+            </div>
+            <div class="card border-top-0">
+              <div class="card-body">
+                <h5 class="card-title">Wed 22nd</h5>
+                <i class="fa-solid fa-sun"></i>
+                <p class="card-text">18°C</p>
+              </div>
+            </div>
+            <div class="card border-top-0">
+              <div class="card-body">
+                <h5 class="card-title">Thu 23rd</h5>
+                <i class="fa-solid fa-cloud-sun-rain"></i>
+                <p class="card-text">19°C</p>
+              </div>
+            </div>
+        </div>
+      </div>
+      <small>
+        <a href="https://github.com/akimanzhan/cool-weather-app-ak" target="_blank"> Open-source Code </a> by Akerke I.
+      </small>
+      
+    </div>
+
+
+    <script src="src/app.js">
+   </script>
+   
+  
+  </body>
+</html>
